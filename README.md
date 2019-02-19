@@ -14,7 +14,7 @@
 * I trust my local f1-score rather than lb score, and the following tips only improve my local scores.
 1. Use the mean average over three embeddings: `glove`, `wiki-news`, `paragram`
 2. Use `pos_weight=0.78` in the BCELoss function to deal with the imbalance of sincere and insincere question numbers
-3. Make the learning rate of the CNN layer equal to `0.25` times the fully connected layer
+3. Make the learning rate of the RNN layer equal to `0.25` times the fully connected layer
 4. Use all `training` sets and `test` sets to fit tokenizer
 5. Use the model checkpoint of the highest val-score to make prediction
 
